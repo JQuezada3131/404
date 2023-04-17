@@ -1,0 +1,297 @@
+                             /*Se agrega la fuente que usara la pagina */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM+Plex+Sans';
+}
+html{
+    scroll-behavior: smooth;
+}
+                                        /*SECCION INICIO*/
+#inicio{
+    background: rgb(239, 239, 239);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+#inicio .contenido header{
+    background-color: rgba(146, 146, 146, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+#inicio .contenido header .contenido-header nav ul a:hover{
+    color: #de260efe;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 5px 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+  
+  
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-top: none; /* añadir un borde superior para separar del menú principal */
+    z-index: 9999;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+nav ul ul li {
+    display: block;
+    border-bottom: 1px solid rgb(0, 0, 0); /* añadir un borde inferior a cada elemento */
+}
+nav ul ul li:last-child {
+    border-bottom: none; /* eliminar el borde inferior del último elemento */
+}
+  
+  nav ul ul li a {
+    display: block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  nav ul ul li a:hover {
+    background-color: #de260efe;
+    transition: none;
+}
+
+
+
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 37px;
+}
+#inicio .contenido .presentacion .bienvenida{
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #000;
+}
+#inicio .contenido .presentacion h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#inicio .contenido .presentacion h2 span{
+    font-size: 60px;
+    color: #de260efe;
+}
+#inicio .contenido .presentacion .descripcion{
+    max-width: 700px;
+    margin: 15px auto;
+    font-size: 16px;
+    text-align: center;
+}
+#icono-nav{
+    color: #fff;
+    display: none;
+}
+                                     /*SECCION SERVICIOS*/
+#servicio{
+    padding: 100px 15 px;
+    text-align: center;
+}
+#servicio .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+#servicio .fila{
+    flex-wrap: wrap;
+    display: block;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+#servicio .fila .servicio{
+    max-width: calc(33.33% - 10px); /* para que muestre 3 secciones por fila */
+    background-color: #000000ce;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 0.5rem;
+    transition: .5s;
+}
+
+/* Estilos para la versión de escritorio */
+@media screen and (min-width: 768px) {
+    #servicio .fila {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    #servicio .servicio {
+      width: calc(100% / 3);
+    }
+  }
+  
+  /* Estilos para la versión móvil */
+  @media screen and (max-width: 767px) {
+    #servicio .fila {
+      display: block;
+    }
+  
+    #servicio .servicio {
+      width: 100%;
+    }
+  }
+
+  @media(max-width: 768px) {
+    #servicio .fila .servicio{
+        max-width: 100%; /* para que solo se muestre una sección en móvil */
+    }
+}
+
+#servicio .fila .servicio:hover{
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a; 
+}
+#servicio .fila .servicio h4{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+#servicio .fila .servicio .icono{
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 2px;
+}
+
+#servicio .fila .servicio .icono img{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+#servicio .fila .servicio hr{
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+#servicio .fila .servicio ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#servicio .fila .servicio p{
+    font-size: 18px;
+    line-height: 22px;
+}
+.iconof {
+    position: fixed;
+    top: 90%;
+    transform: translateY(-50%);
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.iconof a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconof img {
+    width: 40px;
+    height: 40px;
+}
+.iconoi {
+    position: fixed;
+    top: 80%;
+    transform: translateY(-50%);
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.iconoi a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconoi img {
+    width: 40px;
+    height: 40px;
+}

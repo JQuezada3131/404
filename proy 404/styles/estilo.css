@@ -1,0 +1,151 @@
+                             /*Se agrega la fuente que usara la pagina */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM+Plex+Sans';
+}
+html{
+    scroll-behavior: smooth;
+}
+                                        /*SECCION INICIO*/
+#inicio{
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/fondo.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+#inicio .contenido header{
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+#inicio .contenido header .contenido-header nav ul a:hover{
+    color: #ff5080;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 5px 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+  
+  
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-top: none; /* añadir un borde superior para separar del menú principal */
+    z-index: 9999;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+nav ul ul li {
+    display: block;
+    border-bottom: 1px solid rgb(0, 0, 0); /* añadir un borde inferior a cada elemento */
+}
+nav ul ul li:last-child {
+    border-bottom: none; /* eliminar el borde inferior del último elemento */
+}
+  
+  nav ul ul li a {
+    display: block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  nav ul ul li a:hover {
+    background-color: #de260efe;
+    transition: none;
+}
+
+
+
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#inicio .contenido .presentacion .bienvenida{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#inicio .contenido .presentacion h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#inicio .contenido .presentacion h2 span{
+    font-size: 80px;
+    color: #ff5080;
+}
+#inicio .contenido .presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+#icono-nav{
+    color: #fff;
+    display: none;
+}
+
